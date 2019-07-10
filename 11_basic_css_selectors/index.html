@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Basic CSS Selectors</title>
+
+    <style>
+      /* universal selector 
+      * {
+        color: blue;
+      }
+      */
+
+
+      /* type selector 
+      p {
+        color: blue;
+      }
+      */
+
+
+      /* class selector 
+      .content {
+        color: blue;
+      }
+      */
+
+      /* id selector 
+      #first-div {
+        color: blue;
+      }
+      */
+
+
+      /* descendant selector 
+      #first-div p  {
+          color: blue;
+      }
+      */
+
+
+      /* child selector 
+      #first-div > p  {
+          color: blue;
+      }
+      */
+
+      /* adjacent sibling selector 
+      #first-div + p  {
+        color: blue;
+      }
+      */
+
+      /* general sibling selector 
+      #first-div ~ p  {
+        color: blue;
+      }
+      */
+
+      /* multi selector 
+	    p.content {
+		    color:blue;
+	    }
+      */
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 0. Not in a div.</p>
+    <div id="first-div" class="content">
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <div id="second-div">
+        <p>Paragraph 3 in the 2nd div.</p>
+      </div>
+    </div>
+    <p>Paragraph 4. Not in the div.</p>
+    <p>Paragraph 5. Not in the div.</p>
+  </body>
+
+</html>
